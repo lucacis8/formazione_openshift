@@ -1,4 +1,4 @@
-# **Esercizio: Gestione dei Secret in Kubernetes**
+# **Gestione Secret**
 
 Questo esercizio illustra come creare e gestire diversi tipi di Secret in Kubernetes e come utilizzarli all'interno di un cluster.
 
