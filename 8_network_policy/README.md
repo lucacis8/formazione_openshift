@@ -1,4 +1,4 @@
-# Kubernetes: Esercizio Completo con Frontend, Backend e Database
+# Verifica e creazione Network Policy (Hard)
 
 Questo progetto dimostra come utilizzare Kubernetes per gestire un'applicazione composta da tre componenti principali: un **frontend**, un **backend** e un **database MySQL**. Include l'implementazione dei manifest YAML, la configurazione di NetworkPolicies e la verifica del funzionamento.
 
