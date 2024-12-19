@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: python:3.9-slim
+        command:
+          - "sh"
+          - "-c"
+          - |
+            apt-get update && apt-get install -y default-mysql-client && \
+            python -m http.server 5000
+        ports:
+        - containerPort: 5000
