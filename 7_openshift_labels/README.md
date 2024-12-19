@@ -42,7 +42,7 @@ spec:
 Abbiamo creato un servizio di tipo LoadBalancer per esporre l’applicazione web all’esterno del cluster, selezionando tutti i pod con le labels `app=web` e `environment=dev`.
 
 Il comando per creare il servizio:
-```bash
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -63,7 +63,7 @@ spec:
 Abbiamo creato un ReplicaSet per gestire le repliche del nostro deployment dell’applicazione web. Il ReplicaSet ha le stesse labels del deployment, assicurando che solo i pod con le labels corrette vengano gestiti.
 
 Il comando per creare il ReplicaSet:
-```bash
+```yaml
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -94,7 +94,7 @@ spec:
 Abbiamo creato un Ingress per esporre l’applicazione web tramite un nome di dominio personalizzato `web-app.dev.local`. L’Ingress instrada il traffico verso il servizio `web-app-service`, selezionato dalle labels.
 
 Il comando per creare l’Ingress:
-```bash
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -118,7 +118,7 @@ spec:
 Abbiamo creato un DaemonSet per eseguire un’applicazione di logging su tutti i nodi del cluster. Questo assicura che ogni nodo esegua un’istanza del logging app, etichettato con `app=logging`.
 
 Il comando per creare il DaemonSet:
-```bash
+```yaml
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
