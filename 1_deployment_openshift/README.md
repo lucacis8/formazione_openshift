@@ -128,5 +128,3 @@ nginx-deployment   NodePort    10.97.140.158   <none>        80:30914/TCP   3m
 ## Autore
 
 Questo esercizio è stato svolto come attività didattica per comprendere l’uso di **Deployment**, **Service** e **Minikube** in un cluster Kubernetes locale.
-
-Questo README.md è breve, mirato e descrive esattamente ciò che è stato fatto nell'esercizio. Puoi caricarlo direttamente nel tuo repository GitHub.
