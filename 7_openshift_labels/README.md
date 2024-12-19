@@ -154,4 +154,4 @@ Dopo aver configurato correttamente l’Ingress e il file `/etc/hosts`, abbiamo 
 
 ## Conclusioni
 
-Abbiamo creato con successo vari oggetti Kubernetes come Deployment, Service, ReplicaSet, Ingress e DaemonSet, organizzandoli con le labels per gestirli facilmente in base all’ambiente, tipo di applicazione e regione geografica. L’applicazione web è stata esposta all’esterno tramite un Ingress, con traffico instradato tramite il servizio di tipo LoadBalancer..
+Abbiamo creato con successo vari oggetti Kubernetes come Deployment, Service, ReplicaSet, Ingress e DaemonSet, organizzandoli con le labels per gestirli facilmente in base all’ambiente, tipo di applicazione e regione geografica. L’applicazione web è stata esposta all’esterno tramite un Ingress, con traffico instradato tramite il servizio di tipo LoadBalancer.
